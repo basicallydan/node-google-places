@@ -9,7 +9,10 @@
     "type": "git",
     "url": "http://github.com/basicallydan/node-google-places.git"
   },
-  "dependencies"  : ["underscore", "url"],
+  "dependencies"  : {
+    "underscore" : "",
+    "url" : ""
+  },
   "main": "./lib/google-places.js"
 }
 
