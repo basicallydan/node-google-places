@@ -14,7 +14,6 @@
     "underscore" : "",
     "url" : ""
   },
-  "dependencies"  : ["underscore", "url"],
   "devDependencies": ["vows", "node-fakeweb"],
   "main": "./lib/google-places.js"
 }
