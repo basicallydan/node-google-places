@@ -4,6 +4,7 @@
   "version": "0.0.2",
   "homepage": "http://github.com/basicallydan/node-google-places",
   "author": "Jay Powers <jay@vermonster.com>, Daniel Hough <daniel.hough@gmail.com>",
+  "contributors": ["Marcin Wiśniowski <shfx@shfx.pl> (http://shfx.pl)"],
   "scripts":{"test":"node ./test/index.test.js"},
   "repository": {
     "type": "git",
@@ -13,6 +14,8 @@
     "underscore" : "",
     "url" : ""
   },
+  "dependencies"  : ["underscore", "url"],
+  "devDependencies": ["vows", "node-fakeweb"],
   "main": "./lib/google-places.js"
 }
 
