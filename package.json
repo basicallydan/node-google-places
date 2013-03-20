@@ -1,7 +1,7 @@
 {
   "name": "google-places",
   "description": "fork of node.js client for google places API",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "homepage": "http://github.com/basicallydan/node-google-places",
   "author": "Jay Powers <jay@vermonster.com>, Daniel Hough <daniel.hough@gmail.com>",
   "contributors": ["Marcin Wiśniowski <shfx@shfx.pl> (http://shfx.pl)"],
