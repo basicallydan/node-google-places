@@ -7,7 +7,7 @@ fakeweb.allowNetConnect = false;
 
 // fake the search
 fakeweb.registerUri({
-  uri: 'https://maps.googleapis.com/maps/api/place/search/json?location=42.357799%2C-71.0536364&radius=10&sensor=false&language=en&&key=fake_key',
+  uri: 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=42.357799%2C-71.0536364&radius=10&sensor=false&language=en&&timeout=30000&rankby=prominence&key=fake_key',
   body: '{"results" : [{"name": "Vermonster", "id":"1"}], "status" : "OK"}'
 });
 // fake the autocomplete
@@ -26,7 +26,7 @@ vows.describe('Url generation').addBatch({
     topic: new GooglePlaces('fake_key'),
 
     'should have a default url for place search': function(topic) {
-      assert.equal(topic._generateUrl({}, 'search').href, 'https://maps.googleapis.com/maps/api/place/search/json?key=fake_key');
+      assert.equal(topic._generateUrl({}, 'nearbysearch').href, 'https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=fake_key');
     },
 
     'should have a default url for place autocomplete': function(topic) {
